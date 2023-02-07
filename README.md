@@ -4,15 +4,15 @@
 
 * ng new nombre
 
-**Añadir eslint**
+## Añadir eslint
 
-ng add @angular-eslint/schematics
+* ng add @angular-eslint/schematics
 
-**Cambiar karma por jest**
+## Cambiar karma por jest
 
-ng add @briebug/jest-schematic
+* ng add @briebug/jest-schematic
 
-add en jest.config.js
+* add en jest.config.js
 	testPathIgnorePatterns: ["<rootDir>/cypress/"],
 	moduleDirectories: [
 		".",
@@ -20,19 +20,17 @@ add en jest.config.js
 		"node_modules"
 	]
 	
-*En Ionic:*
+_En Ionic:_
 	
-*Cambiar en angular.json la sección de test.option.assets por "assets": [
+1 Cambiar en angular.json la sección de test.option.assets por "assets": [
       "src/assets"
-    ],*
+    ],
 
-*Borrar el fichero src/test.js*
+2 Borrar el fichero src/test.js
 	
-	
+## cypress e2e
 
-**cypress e2e**
-
-ng add @cypress/schematic
+* ng add @cypress/schematic
 
 cambiar en cypress/integration/spec.ts
 
