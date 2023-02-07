@@ -20,9 +20,15 @@ add en jest.config.js
 		"node_modules"
 	]
 	
-*En Ionic, cambiar en angular.json la sección de test.option.assets por "assets": [
-              "src/assets"
-            ],*
+*En Ionic:*
+	
+*Cambiar en angular.json la sección de test.option.assets por "assets": [
+      "src/assets"
+    ],*
+
+*Borrar el fichero src/test.js*
+	
+	
 
 **cypress e2e**
 
