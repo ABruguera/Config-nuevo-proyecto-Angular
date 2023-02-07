@@ -12,14 +12,16 @@
 
 * ng add @briebug/jest-schematic
 
-    add en jest.config.js
+~~~
+add en jest.config.js
 	testPathIgnorePatterns: ["<rootDir>/cypress/"],
 	moduleDirectories: [
 		".",
 		"src",
 		"node_modules"
 	]
-	
+~~~
+
 _En Ionic:_
 	
 1. Cambiar en angular.json la sección de test.option.assets por "assets": [
