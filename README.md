@@ -12,21 +12,21 @@
 
 * ng add @briebug/jest-schematic
 
-* add en jest.config.js
+* 'add en jest.config.js
 	testPathIgnorePatterns: ["<rootDir>/cypress/"],
 	moduleDirectories: [
 		".",
 		"src",
 		"node_modules"
-	]
+	]'
 	
 _En Ionic:_
 	
-1 Cambiar en angular.json la sección de test.option.assets por "assets": [
+1. Cambiar en angular.json la sección de test.option.assets por "assets": [
       "src/assets"
     ],
 
-2 Borrar el fichero src/test.js
+2. Borrar el fichero src/test.js
 	
 ## cypress e2e
 
