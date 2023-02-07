@@ -1,6 +1,6 @@
 ## Config-nuevo-proyecto-Angular
 
-**Nuevo proyecto**
+# Nuevo proyecto
 
 ng new nombre
 
