@@ -1,12 +1,14 @@
 # Config-nuevo-proyecto-Angular
 
-Nuevo proyecto
+**Nuevo proyecto**
+
 ng new nombre
 
-Añadir eslint
+**Añadir eslint**
+
 ng add @angular-eslint/schematics
 
-Cambiar karma por jest
+**Cambiar karma por jest**
 ng add @briebug/jest-schematic
 
 add en jest.config.js
@@ -17,13 +19,16 @@ add en jest.config.js
 		"node_modules"
 	]
 
-cypress e2e
+**cypress e2e**
+
 ng add @cypress/schematic
 
-cambiar en cypress/integration/spec.ts
+**cambiar en cypress/integration/spec.ts**
+
 cy.contains('nombre de la app app is running!');
 
-instalar prettier y airbnb para eslint
+**instalar prettier y airbnb para eslint**
+
 npm i -D eslint-config-airbnb-typescript eslint-config-airbnb-base eslint-plugin-import eslint-config-prettier eslint-plugin-prettier prettier
 
 Crear archivo .prettierrc
@@ -53,6 +58,7 @@ archivo .prettierignore
 /coverage
 
 actualizar .eslintrc.json
+
 extends: 
 	"airbnb-typescript/base",
 	"prettier"
@@ -65,18 +71,24 @@ html
 	"plugins": ["prettier"],
 	
 
-test:
+**test:**
+
 ng test
 ng e2e
 ng lint
 
 
-Material:
+**Material:**
 ng add @angular/material
 
-ngx translate
+**ngx translate**
+
 npm install @ngx-translate/core --save
+
 npm install @ngx-translate/http-loader --save
+
 Config inicial de ngx
+
+**Simple git hooks**
 
 https://github.com/toplenboren/simple-git-hooks
