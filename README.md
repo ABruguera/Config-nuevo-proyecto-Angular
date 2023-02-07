@@ -38,7 +38,7 @@ _En Ionic:_
 
 * cambiar en cypress/integration/spec.ts
 ~~~
-	cy.contains('nombre de la app app is running!');
+cy.contains('nombre de la app app is running!');
 ~~~
 
 ## instalar prettier y airbnb para eslint
