@@ -9,6 +9,7 @@ ng new nombre
 ng add @angular-eslint/schematics
 
 **Cambiar karma por jest**
+
 ng add @briebug/jest-schematic
 
 add en jest.config.js
@@ -18,12 +19,16 @@ add en jest.config.js
 		"src",
 		"node_modules"
 	]
+	
+*En Ionic, cambiar en angular.json la sección de test.option.assets por "assets": [
+              "src/assets"
+            ],*
 
 **cypress e2e**
 
 ng add @cypress/schematic
 
-**cambiar en cypress/integration/spec.ts**
+cambiar en cypress/integration/spec.ts
 
 cy.contains('nombre de la app app is running!');
 
@@ -69,7 +74,7 @@ rules:
 html 
 	extends prettier
 	"plugins": ["prettier"],
-	
+
 
 **test:**
 
@@ -79,6 +84,7 @@ ng lint
 
 
 **Material:**
+	
 ng add @angular/material
 
 **ngx translate**
