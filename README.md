@@ -24,25 +24,29 @@ add en jest.config.js
 
 _En Ionic:_
 	
-1. Cambiar en angular.json la sección de test.option.assets por "assets": [
+1. Cambiar en angular.json la sección de test.option.assets por 
+~~~
+"assets": [
       "src/assets"
     ],
-
+~~~
 2. Borrar el fichero src/test.js
 	
 ## cypress e2e
 
 * ng add @cypress/schematic
 
-cambiar en cypress/integration/spec.ts
+* cambiar en cypress/integration/spec.ts
+~~~
+	cy.contains('nombre de la app app is running!');
+~~~
 
-cy.contains('nombre de la app app is running!');
+## instalar prettier y airbnb para eslint
 
-**instalar prettier y airbnb para eslint**
+* npm i -D eslint-config-airbnb-typescript eslint-config-airbnb-base eslint-plugin-import eslint-config-prettier eslint-plugin-prettier prettier
 
-npm i -D eslint-config-airbnb-typescript eslint-config-airbnb-base eslint-plugin-import eslint-config-prettier eslint-plugin-prettier prettier
-
-Crear archivo .prettierrc
+* Crear archivo .prettierrc
+~~~
 {
   "singleQuote": true,
   "arrow-body-style": "off",
@@ -63,13 +67,15 @@ Crear archivo .prettierrc
     }
   ]
 }
+~~~
 
-archivo .prettierignore
-/dist
-/coverage
+* archivo .prettierignore
+	+ /dist
+	+ /coverage
 
-actualizar .eslintrc.json
+* actualizar .eslintrc.json
 
+~~~
 extends: 
 	"airbnb-typescript/base",
 	"prettier"
@@ -80,32 +86,32 @@ rules:
 html 
 	extends prettier
 	"plugins": ["prettier"],
+~~~
 
-Añadir al package.json los scripts:
+* Añadir al package.json los scripts:
 
-"prettier:check": "prettier --config .prettierrc --check \"src/**/*.{ts,scss,html}\"",
+	+ "prettier:check": "prettier --config .prettierrc --check \"src/**/*.{ts,scss,html}\"",
 
-"prettier:fix": "prettier --config .prettierrc --write \"src/**/*.{ts,scss,html}\""
+	+ "prettier:fix": "prettier --config .prettierrc --write \"src/**/*.{ts,scss,html}\""
 
-**test:**
+## test:
 
-ng test
-ng e2e
-ng lint
+* ng test
+* ng e2e
+* ng lint
 
-
-**Material:**
+## Material:
 	
-ng add @angular/material
+* ng add @angular/material
 
-**ngx translate**
+## ngx translate
 
-npm install @ngx-translate/core --save
+* npm install @ngx-translate/core --save
 
-npm install @ngx-translate/http-loader --save
+* npm install @ngx-translate/http-loader --save
 
-Config inicial de ngx
+* Config inicial de ngx
 
-**Simple git hooks**
+## Simple git hooks
 
-https://github.com/toplenboren/simple-git-hooks
+* https://github.com/toplenboren/simple-git-hooks
