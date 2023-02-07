@@ -81,6 +81,11 @@ html
 	extends prettier
 	"plugins": ["prettier"],
 
+Añadir al package.json los scripts:
+
+"prettier:check": "prettier --config .prettierrc --check \"src/**/*.{ts,scss,html}\"",
+
+"prettier:fix": "prettier --config .prettierrc --write \"src/**/*.{ts,scss,html}\""
 
 **test:**
 
